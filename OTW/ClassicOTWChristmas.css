@@ -1,0 +1,136 @@
+/* A Classic OldToons Christmas (Test)|
+======================================|
+Theme designed by Angus|              |
+=======================|              |
+                                      |
+Snow from "snow fall" by FROLIAN-cell |
+______________________________________|
+
+/*|   :)   |*/
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    /*
+  background-image: url("https://i.ibb.co/xKYDfBNB/image.png");
+ */
+    background-image: url("https://i.ibb.co/QjmtvGDW/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.top-nav {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+    border-style: dashed;
+    border-color: #fff
+}
+
+main.page__home {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+    border-style: dashed;
+    border-color: #fff;
+}
+
+ul.chatroom__messages {
+    background-image: url("https://i.ibb.co/5hK6rFwK/tenor.gif");
+    background-position: bottom;
+    background-repeat: repeat;
+    background-attachment: inherit;
+    background-size: 2000px;
+}
+
+div.chatbox__chatroom {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+}
+
+textarea.form__textarea {
+    background-color: #0f1826
+}
+
+div.panel__body {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+}
+
+footer.footer {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+    border-style: dashed;
+    border-color: #fff
+}
+
+button.form__button.form__button--text.form__button--centered {
+    color: #bf360c;
+}
+
+/* Snow layers */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(https://i.ibb.co/p6NhnBk4/4-2-white-snow-png.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.01);
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -99;
+    /* snow above background but below content */
+}
+
+body::after {
+    filter: blur(1px);
+    background-size: 400px;
+    animation-duration: 200s;
+}
+
+body::before {
+    filter: blur(4px);
+    opacity: 0.5;
+    background-size: 10px 10px;
+    animation-duration: 300s;
+}
+
+.move::after {
+    filter: blur(2px);
+    opacity: 0.5;
+    background-size: 80%;
+    animation-duration: 300s;
+}
+
+.move::before {
+    filter: blur(4px);
+    opacity: 0.4;
+    background-size: 80%;
+    animation-duration: 400s;
+}
+
+/* Ensure all content sits above snow */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2200px 4000px;
+    }
+}
