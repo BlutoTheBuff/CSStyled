@@ -1,32 +1,46 @@
 /* A Classic OldToons Christmas (Test)|
 ======================================|
-Theme designed by Angus|              |
-=======================|              |
+Theme designed by: Angus|             |
+========================|             |
                                       |
-Snow from "snow fall" by FROLIAN-cell |
-______________________________________|
-
-/*|   :)   |*/
+♪ Dashing through the snow ♪          |
+♪ Giving nods and winks ;) ♪          |
+♪ Look at this stylesheet  ♪          |
+♪ Man, it really stinks    ♪          |
+_____________________________________*/
 
 html,
 body {
     height: 100%;
     padding: 0;
-    /*
-  background-image: url("https://i.ibb.co/xKYDfBNB/image.png");
- */
     background-image: url("https://i.ibb.co/QjmtvGDW/image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.top-nav__branding {
+    display: flex;
+    background: url('https://i.ibb.co/dwdNXkr8/Favicon.png') no-repeat center center;
+    background-size: contain;
+}
+
 .top-nav {
     background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
     background-color: rgba(255, 0, 0, .3);
     background-size: 2000px;
     border-style: dashed;
-    border-color: #fff
+    border-color: #fff;
+}
+
+section.alert.special-event-alert {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    background-color: rgba(255, 0, 0, .3);
+    background-size: 2000px;
+    border-style: dashed;
+    border-color: #fff;
+    height: 50px;
 }
 
 main.page__home {
@@ -73,64 +87,694 @@ button.form__button.form__button--text.form__button--centered {
     color: #bf360c;
 }
 
-/* Snow layers */
-body::before,
-body::after {
+.fa-envelope:before {
     content: "";
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-image: url(https://i.ibb.co/p6NhnBk4/4-2-white-snow-png.png);
-    background-repeat: repeat;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.01);
-    animation-name: move;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: -99;
-    /* snow above background but below content */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://i.ibb.co/BHzq6Wb5/merry-christmas-flag.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.6vh;
 }
 
+.fa-bell:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://i.ibb.co/DPLbsLQw/Bell.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.6vh;
+}
+
+.top-nav__icon-bar > li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translate(17%, -65%);
+  width: 42px;
+  height: 42px;
+  background: url('https://i.ibb.co/q3mV9B53/Santa-Hat.png') no-repeat center center;
+  background-size: contain;
+}
+
+label.form__label {
+  font-size: 12px
+}
+
+.alert__content {
+    color: #fff;
+    height: 42px;
+}
+
+.alert__content > strong:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0%);
+}
+
+/* User Classes */
+
+.fa-times:before {
+    content: "⛏"
+}
+
+.fa-user:before {
+    content: "🌡"
+}
+
+.fa-circle-user:before,
+.fa-user-circle:before {
+    content: "❆"
+}
+
+.fa-power-off:before {
+    content: "🧣"
+}
+
+.fa-bolt:before,
+.fa-zap:before {
+    content: "🥛"
+}
+
+.fa-rocket:before {
+    content: "🍪"
+}
+
+.fa-key:before {
+    content: "☕"
+}
+
+.fa-hdd:before {
+    content: "🧦"
+}
+
+.fa-server:before {
+    content: "☃︎"
+}
+
+.fa-upload:before {
+    content: "⁺🎄₊"
+}
+
+.fa-shield:before {
+    content: "🥧"
+}
+
+.fa-star:before {
+    content: "🍖"
+}
+
+.fa-magic:before {
+    content: "🦌"
+}
+
+.fa-user-pen:before {
+    content: "🕯"
+}
+
+.fa-code:before {
+    content: "✨"
+}
+
+.fa-badge-check:before {
+    content: "🌨"
+}
+
+.fa-user-secret:before {
+    content: "🎁"
+}
+
+.fa-crown:before {
+    content: "🎅🏻"
+}
+
+/* ========== ❄︎ Beware: Snow Below ❄︎ ========== */
+html::before,
+html::after,
+body::before,
 body::after {
-    filter: blur(1px);
-    background-size: 400px;
-    animation-duration: 200s;
+    content: '';
+    position: fixed;
+    top: -1600px;
+    left: 0;
+    width: 100%;
+    height: 3200px;
+    pointer-events: none;
+    z-index: -99;
+}
+
+html::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: /* First tile (0-1600px) */
+    5vw 50px 0 0 white,
+    12vw 150px 0 1px rgba(255, 255, 255, 0.95),
+    23vw 280px 0 0 white,
+    31vw 80px 0 1px rgba(255, 255, 255, 0.9),
+    42vw 380px 0 0 white,
+    48vw 200px 0 1px rgba(255, 255, 255, 0.95),
+    57vw 500px 0 0 white,
+    65vw 120px 0 1px rgba(255, 255, 255, 0.9),
+    73vw 620px 0 0 white,
+    82vw 350px 0 1px rgba(255, 255, 255, 0.95),
+    91vw 750px 0 0 white,
+    8vw 450px 0 1px rgba(255, 255, 255, 0.9),
+    18vw 880px 0 0 white,
+    27vw 580px 0 1px rgba(255, 255, 255, 0.95),
+    38vw 1000px 0 0 white,
+    45vw 700px 0 1px rgba(255, 255, 255, 0.9),
+    55vw 1120px 0 0 white,
+    63vw 820px 0 1px rgba(255, 255, 255, 0.95),
+    72vw 1250px 0 0 white,
+    79vw 950px 0 1px rgba(255, 255, 255, 0.9),
+    88vw 1380px 0 0 white,
+    95vw 1080px 0 1px rgba(255, 255, 255, 0.95),
+    3vw 1500px 0 0 white,
+    15vw 1200px 0 1px rgba(255, 255, 255, 0.9),
+    35vw 1450px 0 0 white,
+    52vw 1300px 0 1px rgba(255, 255, 255, 0.95),
+    68vw 1550px 0 0 white,
+    85vw 1180px 0 1px rgba(255, 255, 255, 0.9),
+    /* Second tile - DUPLICATE offset by 1600px */
+    5vw 1650px 0 0 white,
+    12vw 1750px 0 1px rgba(255, 255, 255, 0.95),
+    23vw 1880px 0 0 white,
+    31vw 1680px 0 1px rgba(255, 255, 255, 0.9),
+    42vw 1980px 0 0 white,
+    48vw 1800px 0 1px rgba(255, 255, 255, 0.95),
+    57vw 2100px 0 0 white,
+    65vw 1720px 0 1px rgba(255, 255, 255, 0.9),
+    73vw 2220px 0 0 white,
+    82vw 1950px 0 1px rgba(255, 255, 255, 0.95),
+    91vw 2350px 0 0 white,
+    8vw 2050px 0 1px rgba(255, 255, 255, 0.9),
+    18vw 2480px 0 0 white,
+    27vw 2180px 0 1px rgba(255, 255, 255, 0.95),
+    38vw 2600px 0 0 white,
+    45vw 2300px 0 1px rgba(255, 255, 255, 0.9),
+    55vw 2720px 0 0 white,
+    63vw 2420px 0 1px rgba(255, 255, 255, 0.95),
+    72vw 2850px 0 0 white,
+    79vw 2550px 0 1px rgba(255, 255, 255, 0.9),
+    88vw 2980px 0 0 white,
+    95vw 2680px 0 1px rgba(255, 255, 255, 0.95),
+    3vw 3100px 0 0 white,
+    15vw 2800px 0 1px rgba(255, 255, 255, 0.9),
+    35vw 3050px 0 0 white,
+    52vw 2900px 0 1px rgba(255, 255, 255, 0.95),
+    68vw 3150px 0 0 white,
+    85vw 2780px 0 1px rgba(255, 255, 255, 0.9);
+    animation: snowfall-1 7s linear infinite;
+}
+
+html::after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: /* First tile (0-1600px) */
+    2vw 30px 0 0 rgba(255, 255, 255, 0.85),
+    9vw 130px 0 0 rgba(255, 255, 255, 0.8),
+    16vw 230px 0 0 rgba(255, 255, 255, 0.85),
+    24vw 60px 0 0 rgba(255, 255, 255, 0.8),
+    32vw 330px 0 0 rgba(255, 255, 255, 0.85),
+    39vw 160px 0 0 rgba(255, 255, 255, 0.8),
+    47vw 430px 0 0 rgba(255, 255, 255, 0.85),
+    54vw 260px 0 0 rgba(255, 255, 255, 0.8),
+    62vw 530px 0 0 rgba(255, 255, 255, 0.85),
+    69vw 90px 0 0 rgba(255, 255, 255, 0.8),
+    77vw 630px 0 0 rgba(255, 255, 255, 0.85),
+    84vw 360px 0 0 rgba(255, 255, 255, 0.8),
+    92vw 730px 0 0 rgba(255, 255, 255, 0.85),
+    6vw 460px 0 0 rgba(255, 255, 255, 0.8),
+    13vw 830px 0 0 rgba(255, 255, 255, 0.85),
+    21vw 560px 0 0 rgba(255, 255, 255, 0.8),
+    29vw 930px 0 0 rgba(255, 255, 255, 0.85),
+    36vw 660px 0 0 rgba(255, 255, 255, 0.8),
+    44vw 1030px 0 0 rgba(255, 255, 255, 0.85),
+    51vw 760px 0 0 rgba(255, 255, 255, 0.8),
+    59vw 1130px 0 0 rgba(255, 255, 255, 0.85),
+    66vw 860px 0 0 rgba(255, 255, 255, 0.8),
+    74vw 1230px 0 0 rgba(255, 255, 255, 0.85),
+    81vw 960px 0 0 rgba(255, 255, 255, 0.8),
+    89vw 1330px 0 0 rgba(255, 255, 255, 0.85),
+    96vw 1060px 0 0 rgba(255, 255, 255, 0.8),
+    4vw 1430px 0 0 rgba(255, 255, 255, 0.85),
+    11vw 1160px 0 0 rgba(255, 255, 255, 0.8),
+    19vw 1530px 0 0 rgba(255, 255, 255, 0.85),
+    26vw 1260px 0 0 rgba(255, 255, 255, 0.8),
+    34vw 1590px 0 0 rgba(255, 255, 255, 0.85),
+    58vw 1360px 0 0 rgba(255, 255, 255, 0.8),
+    71vw 1480px 0 0 rgba(255, 255, 255, 0.85),
+    86vw 1550px 0 0 rgba(255, 255, 255, 0.8),
+    /* Second tile - DUPLICATE offset by 1600px */
+    2vw 1630px 0 0 rgba(255, 255, 255, 0.85),
+    9vw 1730px 0 0 rgba(255, 255, 255, 0.8),
+    16vw 1830px 0 0 rgba(255, 255, 255, 0.85),
+    24vw 1660px 0 0 rgba(255, 255, 255, 0.8),
+    32vw 1930px 0 0 rgba(255, 255, 255, 0.85),
+    39vw 1760px 0 0 rgba(255, 255, 255, 0.8),
+    47vw 2030px 0 0 rgba(255, 255, 255, 0.85),
+    54vw 1860px 0 0 rgba(255, 255, 255, 0.8),
+    62vw 2130px 0 0 rgba(255, 255, 255, 0.85),
+    69vw 1690px 0 0 rgba(255, 255, 255, 0.8),
+    77vw 2230px 0 0 rgba(255, 255, 255, 0.85),
+    84vw 1960px 0 0 rgba(255, 255, 255, 0.8),
+    92vw 2330px 0 0 rgba(255, 255, 255, 0.85),
+    6vw 2060px 0 0 rgba(255, 255, 255, 0.8),
+    13vw 2430px 0 0 rgba(255, 255, 255, 0.85),
+    21vw 2160px 0 0 rgba(255, 255, 255, 0.8),
+    29vw 2530px 0 0 rgba(255, 255, 255, 0.85),
+    36vw 2260px 0 0 rgba(255, 255, 255, 0.8),
+    44vw 2630px 0 0 rgba(255, 255, 255, 0.85),
+    51vw 2360px 0 0 rgba(255, 255, 255, 0.8),
+    59vw 2730px 0 0 rgba(255, 255, 255, 0.85),
+    66vw 2460px 0 0 rgba(255, 255, 255, 0.8),
+    74vw 2830px 0 0 rgba(255, 255, 255, 0.85),
+    81vw 2560px 0 0 rgba(255, 255, 255, 0.8),
+    89vw 2930px 0 0 rgba(255, 255, 255, 0.85),
+    96vw 2660px 0 0 rgba(255, 255, 255, 0.8),
+    4vw 3030px 0 0 rgba(255, 255, 255, 0.85),
+    11vw 2760px 0 0 rgba(255, 255, 255, 0.8),
+    19vw 3130px 0 0 rgba(255, 255, 255, 0.85),
+    26vw 2860px 0 0 rgba(255, 255, 255, 0.8),
+    34vw 3190px 0 0 rgba(255, 255, 255, 0.85),
+    58vw 2960px 0 0 rgba(255, 255, 255, 0.8),
+    71vw 3080px 0 0 rgba(255, 255, 255, 0.85),
+    86vw 3150px 0 0 rgba(255, 255, 255, 0.8);
+    animation: snowfall-2 11s linear infinite;
 }
 
 body::before {
-    filter: blur(4px);
-    opacity: 0.5;
-    background-size: 10px 10px;
-    animation-duration: 300s;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: /* First tile (0-1600px) */
+    1vw 20px 0 0 rgba(255, 255, 255, 0.7),
+    6vw 70px 0 0 rgba(255, 255, 255, 0.65),
+    11vw 120px 0 0 rgba(255, 255, 255, 0.7),
+    16vw 40px 0 0 rgba(255, 255, 255, 0.65),
+    21vw 170px 0 0 rgba(255, 255, 255, 0.7),
+    26vw 90px 0 0 rgba(255, 255, 255, 0.65),
+    31vw 220px 0 0 rgba(255, 255, 255, 0.7),
+    36vw 140px 0 0 rgba(255, 255, 255, 0.65),
+    41vw 270px 0 0 rgba(255, 255, 255, 0.7),
+    46vw 190px 0 0 rgba(255, 255, 255, 0.65),
+    51vw 320px 0 0 rgba(255, 255, 255, 0.7),
+    56vw 240px 0 0 rgba(255, 255, 255, 0.65),
+    61vw 370px 0 0 rgba(255, 255, 255, 0.7),
+    66vw 290px 0 0 rgba(255, 255, 255, 0.65),
+    71vw 420px 0 0 rgba(255, 255, 255, 0.7),
+    76vw 340px 0 0 rgba(255, 255, 255, 0.65),
+    81vw 470px 0 0 rgba(255, 255, 255, 0.7),
+    86vw 390px 0 0 rgba(255, 255, 255, 0.65),
+    91vw 520px 0 0 rgba(255, 255, 255, 0.7),
+    96vw 440px 0 0 rgba(255, 255, 255, 0.65),
+    3vw 570px 0 0 rgba(255, 255, 255, 0.7),
+    8vw 490px 0 0 rgba(255, 255, 255, 0.65),
+    13vw 620px 0 0 rgba(255, 255, 255, 0.7),
+    18vw 540px 0 0 rgba(255, 255, 255, 0.65),
+    23vw 670px 0 0 rgba(255, 255, 255, 0.7),
+    28vw 590px 0 0 rgba(255, 255, 255, 0.65),
+    33vw 720px 0 0 rgba(255, 255, 255, 0.7),
+    38vw 640px 0 0 rgba(255, 255, 255, 0.65),
+    43vw 770px 0 0 rgba(255, 255, 255, 0.7),
+    48vw 690px 0 0 rgba(255, 255, 255, 0.65),
+    53vw 820px 0 0 rgba(255, 255, 255, 0.7),
+    58vw 740px 0 0 rgba(255, 255, 255, 0.65),
+    63vw 870px 0 0 rgba(255, 255, 255, 0.7),
+    68vw 790px 0 0 rgba(255, 255, 255, 0.65),
+    73vw 920px 0 0 rgba(255, 255, 255, 0.7),
+    78vw 840px 0 0 rgba(255, 255, 255, 0.65),
+    83vw 970px 0 0 rgba(255, 255, 255, 0.7),
+    88vw 890px 0 0 rgba(255, 255, 255, 0.65),
+    93vw 1020px 0 0 rgba(255, 255, 255, 0.7),
+    98vw 940px 0 0 rgba(255, 255, 255, 0.65),
+    4vw 1070px 0 0 rgba(255, 255, 255, 0.7),
+    9vw 990px 0 0 rgba(255, 255, 255, 0.65),
+    14vw 1120px 0 0 rgba(255, 255, 255, 0.7),
+    19vw 1040px 0 0 rgba(255, 255, 255, 0.65),
+    24vw 1170px 0 0 rgba(255, 255, 255, 0.7),
+    29vw 1090px 0 0 rgba(255, 255, 255, 0.65),
+    34vw 1220px 0 0 rgba(255, 255, 255, 0.7),
+    39vw 1140px 0 0 rgba(255, 255, 255, 0.65),
+    44vw 1270px 0 0 rgba(255, 255, 255, 0.7),
+    49vw 1190px 0 0 rgba(255, 255, 255, 0.65),
+    54vw 1320px 0 0 rgba(255, 255, 255, 0.7),
+    59vw 1240px 0 0 rgba(255, 255, 255, 0.65),
+    64vw 1370px 0 0 rgba(255, 255, 255, 0.7),
+    69vw 1290px 0 0 rgba(255, 255, 255, 0.65),
+    74vw 1420px 0 0 rgba(255, 255, 255, 0.7),
+    79vw 1340px 0 0 rgba(255, 255, 255, 0.65),
+    84vw 1470px 0 0 rgba(255, 255, 255, 0.7),
+    89vw 1390px 0 0 rgba(255, 255, 255, 0.65),
+    94vw 1520px 0 0 rgba(255, 255, 255, 0.7),
+    99vw 1440px 0 0 rgba(255, 255, 255, 0.65),
+    2vw 1570px 0 0 rgba(255, 255, 255, 0.7),
+    /* Second tile - DUPLICATE offset by 1600px */
+    1vw 1620px 0 0 rgba(255, 255, 255, 0.7),
+    6vw 1670px 0 0 rgba(255, 255, 255, 0.65),
+    11vw 1720px 0 0 rgba(255, 255, 255, 0.7),
+    16vw 1640px 0 0 rgba(255, 255, 255, 0.65),
+    21vw 1770px 0 0 rgba(255, 255, 255, 0.7),
+    26vw 1690px 0 0 rgba(255, 255, 255, 0.65),
+    31vw 1820px 0 0 rgba(255, 255, 255, 0.7),
+    36vw 1740px 0 0 rgba(255, 255, 255, 0.65),
+    41vw 1870px 0 0 rgba(255, 255, 255, 0.7),
+    46vw 1790px 0 0 rgba(255, 255, 255, 0.65),
+    51vw 1920px 0 0 rgba(255, 255, 255, 0.7),
+    56vw 1840px 0 0 rgba(255, 255, 255, 0.65),
+    61vw 1970px 0 0 rgba(255, 255, 255, 0.7),
+    66vw 1890px 0 0 rgba(255, 255, 255, 0.65),
+    71vw 2020px 0 0 rgba(255, 255, 255, 0.7),
+    76vw 1940px 0 0 rgba(255, 255, 255, 0.65),
+    81vw 2070px 0 0 rgba(255, 255, 255, 0.7),
+    86vw 1990px 0 0 rgba(255, 255, 255, 0.65),
+    91vw 2120px 0 0 rgba(255, 255, 255, 0.7),
+    96vw 2040px 0 0 rgba(255, 255, 255, 0.65),
+    3vw 2170px 0 0 rgba(255, 255, 255, 0.7),
+    8vw 2090px 0 0 rgba(255, 255, 255, 0.65),
+    13vw 2220px 0 0 rgba(255, 255, 255, 0.7),
+    18vw 2140px 0 0 rgba(255, 255, 255, 0.65),
+    23vw 2270px 0 0 rgba(255, 255, 255, 0.7),
+    28vw 2190px 0 0 rgba(255, 255, 255, 0.65),
+    33vw 2320px 0 0 rgba(255, 255, 255, 0.7),
+    38vw 2240px 0 0 rgba(255, 255, 255, 0.65),
+    43vw 2370px 0 0 rgba(255, 255, 255, 0.7),
+    48vw 2290px 0 0 rgba(255, 255, 255, 0.65),
+    53vw 2420px 0 0 rgba(255, 255, 255, 0.7),
+    58vw 2340px 0 0 rgba(255, 255, 255, 0.65),
+    63vw 2470px 0 0 rgba(255, 255, 255, 0.7),
+    68vw 2390px 0 0 rgba(255, 255, 255, 0.65),
+    73vw 2520px 0 0 rgba(255, 255, 255, 0.7),
+    78vw 2440px 0 0 rgba(255, 255, 255, 0.65),
+    83vw 2570px 0 0 rgba(255, 255, 255, 0.7),
+    88vw 2490px 0 0 rgba(255, 255, 255, 0.65),
+    93vw 2620px 0 0 rgba(255, 255, 255, 0.7),
+    98vw 2540px 0 0 rgba(255, 255, 255, 0.65),
+    4vw 2670px 0 0 rgba(255, 255, 255, 0.7),
+    9vw 2590px 0 0 rgba(255, 255, 255, 0.65),
+    14vw 2720px 0 0 rgba(255, 255, 255, 0.7),
+    19vw 2640px 0 0 rgba(255, 255, 255, 0.65),
+    24vw 2770px 0 0 rgba(255, 255, 255, 0.7),
+    29vw 2690px 0 0 rgba(255, 255, 255, 0.65),
+    34vw 2820px 0 0 rgba(255, 255, 255, 0.7),
+    39vw 2740px 0 0 rgba(255, 255, 255, 0.65),
+    44vw 2870px 0 0 rgba(255, 255, 255, 0.7),
+    49vw 2790px 0 0 rgba(255, 255, 255, 0.65),
+    54vw 2920px 0 0 rgba(255, 255, 255, 0.7),
+    59vw 2840px 0 0 rgba(255, 255, 255, 0.65),
+    64vw 2970px 0 0 rgba(255, 255, 255, 0.7),
+    69vw 2890px 0 0 rgba(255, 255, 255, 0.65),
+    74vw 3020px 0 0 rgba(255, 255, 255, 0.7),
+    79vw 2940px 0 0 rgba(255, 255, 255, 0.65),
+    84vw 3070px 0 0 rgba(255, 255, 255, 0.7),
+    89vw 2990px 0 0 rgba(255, 255, 255, 0.65),
+    94vw 3120px 0 0 rgba(255, 255, 255, 0.7),
+    99vw 3040px 0 0 rgba(255, 255, 255, 0.65),
+    2vw 3170px 0 0 rgba(255, 255, 255, 0.7);
+    animation: snowfall-3 15s linear infinite;
 }
 
-.move::after {
-    filter: blur(2px);
-    opacity: 0.5;
-    background-size: 80%;
-    animation-duration: 300s;
+body::after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: /* First tile (0-1600px) */
+    2vw 25px 0 0 rgba(255, 255, 255, 0.45),
+    7vw 75px 0 0 rgba(255, 255, 255, 0.4),
+    12vw 125px 0 0 rgba(255, 255, 255, 0.45),
+    17vw 50px 0 0 rgba(255, 255, 255, 0.4),
+    22vw 175px 0 0 rgba(255, 255, 255, 0.45),
+    27vw 100px 0 0 rgba(255, 255, 255, 0.4),
+    32vw 225px 0 0 rgba(255, 255, 255, 0.45),
+    37vw 150px 0 0 rgba(255, 255, 255, 0.4),
+    42vw 275px 0 0 rgba(255, 255, 255, 0.45),
+    47vw 200px 0 0 rgba(255, 255, 255, 0.4),
+    52vw 325px 0 0 rgba(255, 255, 255, 0.45),
+    57vw 250px 0 0 rgba(255, 255, 255, 0.4),
+    62vw 375px 0 0 rgba(255, 255, 255, 0.45),
+    67vw 300px 0 0 rgba(255, 255, 255, 0.4),
+    72vw 425px 0 0 rgba(255, 255, 255, 0.45),
+    77vw 350px 0 0 rgba(255, 255, 255, 0.4),
+    82vw 475px 0 0 rgba(255, 255, 255, 0.45),
+    87vw 400px 0 0 rgba(255, 255, 255, 0.4),
+    92vw 525px 0 0 rgba(255, 255, 255, 0.45),
+    97vw 450px 0 0 rgba(255, 255, 255, 0.4),
+    4vw 575px 0 0 rgba(255, 255, 255, 0.45),
+    9vw 500px 0 0 rgba(255, 255, 255, 0.4),
+    14vw 625px 0 0 rgba(255, 255, 255, 0.45),
+    19vw 550px 0 0 rgba(255, 255, 255, 0.4),
+    24vw 675px 0 0 rgba(255, 255, 255, 0.45),
+    29vw 600px 0 0 rgba(255, 255, 255, 0.4),
+    34vw 725px 0 0 rgba(255, 255, 255, 0.45),
+    39vw 650px 0 0 rgba(255, 255, 255, 0.4),
+    44vw 775px 0 0 rgba(255, 255, 255, 0.45),
+    49vw 700px 0 0 rgba(255, 255, 255, 0.4),
+    54vw 825px 0 0 rgba(255, 255, 255, 0.45),
+    59vw 750px 0 0 rgba(255, 255, 255, 0.4),
+    64vw 875px 0 0 rgba(255, 255, 255, 0.45),
+    69vw 800px 0 0 rgba(255, 255, 255, 0.4),
+    74vw 925px 0 0 rgba(255, 255, 255, 0.45),
+    79vw 850px 0 0 rgba(255, 255, 255, 0.4),
+    84vw 975px 0 0 rgba(255, 255, 255, 0.45),
+    89vw 900px 0 0 rgba(255, 255, 255, 0.4),
+    94vw 1025px 0 0 rgba(255, 255, 255, 0.45),
+    99vw 950px 0 0 rgba(255, 255, 255, 0.4),
+    1vw 1075px 0 0 rgba(255, 255, 255, 0.45),
+    6vw 1000px 0 0 rgba(255, 255, 255, 0.4),
+    11vw 1125px 0 0 rgba(255, 255, 255, 0.45),
+    16vw 1050px 0 0 rgba(255, 255, 255, 0.4),
+    21vw 1175px 0 0 rgba(255, 255, 255, 0.45),
+    26vw 1100px 0 0 rgba(255, 255, 255, 0.4),
+    31vw 1225px 0 0 rgba(255, 255, 255, 0.45),
+    36vw 1150px 0 0 rgba(255, 255, 255, 0.4),
+    41vw 1275px 0 0 rgba(255, 255, 255, 0.45),
+    46vw 1200px 0 0 rgba(255, 255, 255, 0.4),
+    51vw 1325px 0 0 rgba(255, 255, 255, 0.45),
+    56vw 1250px 0 0 rgba(255, 255, 255, 0.4),
+    61vw 1375px 0 0 rgba(255, 255, 255, 0.45),
+    66vw 1300px 0 0 rgba(255, 255, 255, 0.4),
+    71vw 1425px 0 0 rgba(255, 255, 255, 0.45),
+    76vw 1350px 0 0 rgba(255, 255, 255, 0.4),
+    81vw 1475px 0 0 rgba(255, 255, 255, 0.45),
+    86vw 1400px 0 0 rgba(255, 255, 255, 0.4),
+    91vw 1525px 0 0 rgba(255, 255, 255, 0.45),
+    96vw 1450px 0 0 rgba(255, 255, 255, 0.4),
+    3vw 1575px 0 0 rgba(255, 255, 255, 0.45),
+    /* Second tile - DUPLICATE offset by 1600px */
+    2vw 1625px 0 0 rgba(255, 255, 255, 0.45),
+    7vw 1675px 0 0 rgba(255, 255, 255, 0.4),
+    12vw 1725px 0 0 rgba(255, 255, 255, 0.45),
+    17vw 1650px 0 0 rgba(255, 255, 255, 0.4),
+    22vw 1775px 0 0 rgba(255, 255, 255, 0.45),
+    27vw 1700px 0 0 rgba(255, 255, 255, 0.4),
+    32vw 1825px 0 0 rgba(255, 255, 255, 0.45),
+    37vw 1750px 0 0 rgba(255, 255, 255, 0.4),
+    42vw 1875px 0 0 rgba(255, 255, 255, 0.45),
+    47vw 1800px 0 0 rgba(255, 255, 255, 0.4),
+    52vw 1925px 0 0 rgba(255, 255, 255, 0.45),
+    57vw 1850px 0 0 rgba(255, 255, 255, 0.4),
+    62vw 1975px 0 0 rgba(255, 255, 255, 0.45),
+    67vw 1900px 0 0 rgba(255, 255, 255, 0.4),
+    72vw 2025px 0 0 rgba(255, 255, 255, 0.45),
+    77vw 1950px 0 0 rgba(255, 255, 255, 0.4),
+    82vw 2075px 0 0 rgba(255, 255, 255, 0.45),
+    87vw 2000px 0 0 rgba(255, 255, 255, 0.4),
+    92vw 2125px 0 0 rgba(255, 255, 255, 0.45),
+    97vw 2050px 0 0 rgba(255, 255, 255, 0.4),
+    4vw 2175px 0 0 rgba(255, 255, 255, 0.45),
+    9vw 2100px 0 0 rgba(255, 255, 255, 0.4),
+    14vw 2225px 0 0 rgba(255, 255, 255, 0.45),
+    19vw 2150px 0 0 rgba(255, 255, 255, 0.4),
+    24vw 2275px 0 0 rgba(255, 255, 255, 0.45),
+    29vw 2200px 0 0 rgba(255, 255, 255, 0.4),
+    34vw 2325px 0 0 rgba(255, 255, 255, 0.45),
+    39vw 2250px 0 0 rgba(255, 255, 255, 0.4),
+    44vw 2375px 0 0 rgba(255, 255, 255, 0.45),
+    49vw 2300px 0 0 rgba(255, 255, 255, 0.4),
+    54vw 2425px 0 0 rgba(255, 255, 255, 0.45),
+    59vw 2350px 0 0 rgba(255, 255, 255, 0.4),
+    64vw 2475px 0 0 rgba(255, 255, 255, 0.45),
+    69vw 2400px 0 0 rgba(255, 255, 255, 0.4),
+    74vw 2525px 0 0 rgba(255, 255, 255, 0.45),
+    79vw 2450px 0 0 rgba(255, 255, 255, 0.4),
+    84vw 2575px 0 0 rgba(255, 255, 255, 0.45),
+    89vw 2500px 0 0 rgba(255, 255, 255, 0.4),
+    94vw 2625px 0 0 rgba(255, 255, 255, 0.45),
+    99vw 2550px 0 0 rgba(255, 255, 255, 0.4),
+    1vw 2675px 0 0 rgba(255, 255, 255, 0.45),
+    6vw 2600px 0 0 rgba(255, 255, 255, 0.4),
+    11vw 2725px 0 0 rgba(255, 255, 255, 0.45),
+    16vw 2650px 0 0 rgba(255, 255, 255, 0.4),
+    21vw 2775px 0 0 rgba(255, 255, 255, 0.45),
+    26vw 2700px 0 0 rgba(255, 255, 255, 0.4),
+    31vw 2825px 0 0 rgba(255, 255, 255, 0.45),
+    36vw 2750px 0 0 rgba(255, 255, 255, 0.4),
+    41vw 2875px 0 0 rgba(255, 255, 255, 0.45),
+    46vw 2800px 0 0 rgba(255, 255, 255, 0.4),
+    51vw 2925px 0 0 rgba(255, 255, 255, 0.45),
+    56vw 2850px 0 0 rgba(255, 255, 255, 0.4),
+    61vw 2975px 0 0 rgba(255, 255, 255, 0.45),
+    66vw 2900px 0 0 rgba(255, 255, 255, 0.4),
+    71vw 3025px 0 0 rgba(255, 255, 255, 0.45),
+    76vw 2950px 0 0 rgba(255, 255, 255, 0.4),
+    81vw 3075px 0 0 rgba(255, 255, 255, 0.45),
+    86vw 3000px 0 0 rgba(255, 255, 255, 0.4),
+    91vw 3125px 0 0 rgba(255, 255, 255, 0.45),
+    96vw 3050px 0 0 rgba(255, 255, 255, 0.4),
+    3vw 3175px 0 0 rgba(255, 255, 255, 0.45);
+    animation: snowfall-4 22s linear infinite;
 }
 
-.move::before {
-    filter: blur(4px);
-    opacity: 0.4;
-    background-size: 80%;
-    animation-duration: 400s;
-}
 
-/* Ensure all content sits above snow */
-body > * {
-    position: relative;
-    z-index: 1;
-}
-
-@keyframes move {
+@keyframes snowfall-1 {
     0% {
-        background-position: 0 0;
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        transform: translateY(160px) translateX(15px);
+    }
+    20% {
+        transform: translateY(320px) translateX(25px);
+    }
+    30% {
+        transform: translateY(480px) translateX(15px);
+    }
+    40% {
+        transform: translateY(640px) translateX(-5px);
+    }
+    50% {
+        transform: translateY(800px) translateX(-20px);
+    }
+    60% {
+        transform: translateY(960px) translateX(-25px);
+    }
+    70% {
+        transform: translateY(1120px) translateX(-15px);
+    }
+    80% {
+        transform: translateY(1280px) translateX(5px);
+    }
+    90% {
+        transform: translateY(1440px) translateX(15px);
     }
     100% {
-        background-position: 2200px 4000px;
+        transform: translateY(1600px) translateX(0);
+    }
+}
+
+@keyframes snowfall-2 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        transform: translateY(160px) translateX(-12px);
+    }
+    20% {
+        transform: translateY(320px) translateX(-20px);
+    }
+    30% {
+        transform: translateY(480px) translateX(-15px);
+    }
+    40% {
+        transform: translateY(640px) translateX(0px);
+    }
+    50% {
+        transform: translateY(800px) translateX(15px);
+    }
+    60% {
+        transform: translateY(960px) translateX(20px);
+    }
+    70% {
+        transform: translateY(1120px) translateX(12px);
+    }
+    80% {
+        transform: translateY(1280px) translateX(-5px);
+    }
+    90% {
+        transform: translateY(1440px) translateX(-12px);
+    }
+    100% {
+        transform: translateY(1600px) translateX(0);
+    }
+}
+
+@keyframes snowfall-3 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        transform: translateY(160px) translateX(8px);
+    }
+    20% {
+        transform: translateY(320px) translateX(12px);
+    }
+    30% {
+        transform: translateY(480px) translateX(6px);
+    }
+    40% {
+        transform: translateY(640px) translateX(-4px);
+    }
+    50% {
+        transform: translateY(800px) translateX(-10px);
+    }
+    60% {
+        transform: translateY(960px) translateX(-12px);
+    }
+    70% {
+        transform: translateY(1120px) translateX(-6px);
+    }
+    80% {
+        transform: translateY(1280px) translateX(4px);
+    }
+    90% {
+        transform: translateY(1440px) translateX(10px);
+    }
+    100% {
+        transform: translateY(1600px) translateX(0);
+    }
+}
+
+@keyframes snowfall-4 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        transform: translateY(160px) translateX(-6px);
+    }
+    20% {
+        transform: translateY(320px) translateX(-10px);
+    }
+    30% {
+        transform: translateY(480px) translateX(-6px);
+    }
+    40% {
+        transform: translateY(640px) translateX(2px);
+    }
+    50% {
+        transform: translateY(800px) translateX(8px);
+    }
+    60% {
+        transform: translateY(960px) translateX(10px);
+    }
+    70% {
+        transform: translateY(1120px) translateX(6px);
+    }
+    80% {
+        transform: translateY(1280px) translateX(-2px);
+    }
+    90% {
+        transform: translateY(1440px) translateX(-8px);
+    }
+    100% {
+        transform: translateY(1600px) translateX(0);
     }
 }
