@@ -231,7 +231,7 @@ html::before {
     height: 8px;
     border-radius: 50%;
     background: white;
-    box-shadow: /* First tile (0-1600px) */
+    box-shadow:
     5vw 50px 0 0 white,
     12vw 150px 0 1px rgba(255, 255, 255, 0.95),
     23vw 280px 0 0 white,
@@ -260,7 +260,6 @@ html::before {
     52vw 1300px 0 1px rgba(255, 255, 255, 0.95),
     68vw 1550px 0 0 white,
     85vw 1180px 0 1px rgba(255, 255, 255, 0.9),
-    /* Second tile - DUPLICATE offset by 1600px */
     5vw 1650px 0 0 white,
     12vw 1750px 0 1px rgba(255, 255, 255, 0.95),
     23vw 1880px 0 0 white,
@@ -297,7 +296,7 @@ html::after {
     height: 6px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: /* First tile (0-1600px) */
+    box-shadow:
     2vw 30px 0 0 rgba(255, 255, 255, 0.85),
     9vw 130px 0 0 rgba(255, 255, 255, 0.8),
     16vw 230px 0 0 rgba(255, 255, 255, 0.85),
@@ -332,7 +331,6 @@ html::after {
     58vw 1360px 0 0 rgba(255, 255, 255, 0.8),
     71vw 1480px 0 0 rgba(255, 255, 255, 0.85),
     86vw 1550px 0 0 rgba(255, 255, 255, 0.8),
-    /* Second tile - DUPLICATE offset by 1600px */
     2vw 1630px 0 0 rgba(255, 255, 255, 0.85),
     9vw 1730px 0 0 rgba(255, 255, 255, 0.8),
     16vw 1830px 0 0 rgba(255, 255, 255, 0.85),
@@ -375,7 +373,7 @@ body::before {
     height: 4px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.75);
-    box-shadow: /* First tile (0-1600px) */
+    box-shadow:
     1vw 20px 0 0 rgba(255, 255, 255, 0.7),
     6vw 70px 0 0 rgba(255, 255, 255, 0.65),
     11vw 120px 0 0 rgba(255, 255, 255, 0.7),
@@ -437,7 +435,6 @@ body::before {
     94vw 1520px 0 0 rgba(255, 255, 255, 0.7),
     99vw 1440px 0 0 rgba(255, 255, 255, 0.65),
     2vw 1570px 0 0 rgba(255, 255, 255, 0.7),
-    /* Second tile - DUPLICATE offset by 1600px */
     1vw 1620px 0 0 rgba(255, 255, 255, 0.7),
     6vw 1670px 0 0 rgba(255, 255, 255, 0.65),
     11vw 1720px 0 0 rgba(255, 255, 255, 0.7),
@@ -507,7 +504,7 @@ body::after {
     height: 3px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
-    box-shadow: /* First tile (0-1600px) */
+    box-shadow:
     2vw 25px 0 0 rgba(255, 255, 255, 0.45),
     7vw 75px 0 0 rgba(255, 255, 255, 0.4),
     12vw 125px 0 0 rgba(255, 255, 255, 0.45),
@@ -569,7 +566,6 @@ body::after {
     91vw 1525px 0 0 rgba(255, 255, 255, 0.45),
     96vw 1450px 0 0 rgba(255, 255, 255, 0.4),
     3vw 1575px 0 0 rgba(255, 255, 255, 0.45),
-    /* Second tile - DUPLICATE offset by 1600px */
     2vw 1625px 0 0 rgba(255, 255, 255, 0.45),
     7vw 1675px 0 0 rgba(255, 255, 255, 0.4),
     12vw 1725px 0 0 rgba(255, 255, 255, 0.45),
