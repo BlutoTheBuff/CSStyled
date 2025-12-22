@@ -135,6 +135,13 @@ label.form__label {
     transform: translate(-50%, 0%);
 }
 
+.meta__poster-popup {
+    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+}
+
 /* User Classes */
 
 .fa-times:before {
