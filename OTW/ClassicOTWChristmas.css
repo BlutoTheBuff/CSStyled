@@ -136,10 +136,9 @@ label.form__label {
 }
 
 .meta__poster-popup {
-    background-image: url("https://i.ibb.co/GfhbMKnJ/image-psd-1.png");
-    font-weight: 700;
-    font-style: normal;
-    color: #fff;
+    background-color: #212121;
+    max-height: 70%;
+    overflow: auto;
 }
 
 /* User Classes */
@@ -191,7 +190,7 @@ label.form__label {
 }
 
 .fa-star:before {
-    content: "🍖"
+    content: "⭐"
 }
 
 .fa-magic:before {
