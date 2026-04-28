@@ -519,6 +519,7 @@ body {
   padding: 0;
   background-color: #000;
   background: url(/files/img/MatrixBig.gif) !important;
+  background-image: url(/files/img/MatrixBig.gif) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
