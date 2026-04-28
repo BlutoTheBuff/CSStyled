@@ -517,7 +517,8 @@ html,
 body {
   height: 100%;
   padding: 0;
-  background-image: url(https://theldu.to/files/img/MatrixBig.gif);
+  background-color: #000;
+  background: url(/files/img/MatrixBig.gif) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
