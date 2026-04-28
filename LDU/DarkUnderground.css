@@ -509,7 +509,7 @@ a:hover {
   display:flex;
   justify-content:center;
   max-width:100vw;
-  background-color:#0a0a0a;
+  background-color: #0a0a0a;
   border-radius:var(--paginate-border-radius)
 }
 
@@ -530,8 +530,18 @@ body {
 }
 
 a.top-nav__branding {
-  color:#39ff14;
+  color: #39ff14;
   border: 0px solid #39ff14 !important;
+}
+
+a.top-nav__branding:hover {
+  color: #35ab2c;
+}
+
+.top-nav__site-logo {
+  background-image:radial-gradient(circle,#4aab2c,#1dff47 40%,#06ff00 60%);
+  font-size:2.5rem;
+font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", cursive;
 }
 
 .meta__poster-popup-card {
@@ -545,12 +555,12 @@ a.top-nav__branding {
 }
 
 .vscomp-arrow {
-  background-color:#39ff14;
+  background-color: #39ff14;
 }
 
 .vscomp-dropbox {
   color: #fff;
-  background-color:#0a0a0a;
+  background-color: #0a0a0a;
 }
 
 .vscomp-option.focused {
@@ -558,6 +568,18 @@ a.top-nav__branding {
 }
 
 .vscomp-option.selected {
-  color:#39ff14;
+  color: #39ff14;
   background-color: #070707;
+}
+
+.form__button--filled {
+  color: #000;
+}
+
+.form__button--filled:hover {
+  color: #000;
+}
+
+.form__button:hover {
+  filter:brightness(50%);
 }
