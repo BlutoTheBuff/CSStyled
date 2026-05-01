@@ -613,3 +613,93 @@ a.top-nav__branding:hover {
 .category__icon {
     color: #20cb54;
 }
+
+.trending-poster__download-count {
+    color: var(--text-color);
+    background: #0a0a0a;
+    border: 2px solid var(--color-soft-green);
+}
+
+
+/* Login */
+.auth-form {
+    background-image: linear-gradient(45deg, #070707, #0a0a0a);
+}
+
+.auth-form__text-input,
+.auth-form__select {
+    background-color: #212621;
+    color: var(--text-color)
+}
+
+.auth-form__label {
+    color: var(--color-light-green);
+    font-weight: 700;
+}
+
+.auth-form__site-logo {
+    color: var(--neon-green);
+    font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", cursive;
+}
+
+.auth-form__primary-button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+}
+.auth-form__primary-button:hover {
+    background-color: rgba(0, 142, 0, 0.10);
+}
+
+
+.auth-form__footer-item {
+    color: var(--color-light-green);
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+
+.auth-form__footer-item:hover {
+    color: var(--color-soft-green);
+    background-color: transparent;
+    border-color: var(--neon-green);
+}
+
+/* Application */
+.auth-form__form {
+    background-image: linear-gradient(45deg, #070707, #0a0a0a);
+    color: var(--text-color)
+}
+
+.auth-form__error,
+.auth-form__important-info {
+    color: var(--color-soft-green);
+}
+
+.auth-form__textarea {
+    background-color: #212621;
+    color: var(--text-color)
+}
+
+.auth-form__legend {
+    color: var(--color-light-green);
+}
+
+.auth-form__fieldset {
+    border-radius: 8px;
+    border: none;
+    padding: 52px 16px 16px;
+    box-shadow: 0 2px 4px -1px #0003, 0 4px 5px var(--color-soft-green), 0 1px 10px var(--color-soft-green);
+    position: relative
+}
+
+.auth-form__button--text {
+    color: var(--color-light-green);
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+.auth-form__button--text:hover {
+    color: var(--color-soft-green);
+    background-color: transparent;
+    border-color: var(--neon-green);
+}
