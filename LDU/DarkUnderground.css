@@ -527,7 +527,7 @@ body {
 }
 
 .top-nav {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 a.top-nav__branding {
@@ -619,7 +619,6 @@ a.top-nav__branding:hover {
     background: #0a0a0a;
     border: 2px solid var(--color-soft-green);
 }
-
 
 /* Login */
 .auth-form {
