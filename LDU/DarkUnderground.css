@@ -545,6 +545,19 @@ a.top-nav__branding:hover {
     font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", cursive;
 }
 
+.alert {
+    background-color: transparent !important;
+    padding:12px;
+}
+
+.alerts {
+    background-color: transparent !important;
+}
+
+.alert__content {
+  display:flex;
+}
+
 .meta__poster-popup-card {
     box-shadow: 0 40px 1600px rgba(0, 0, 0, 0.0);
 }
